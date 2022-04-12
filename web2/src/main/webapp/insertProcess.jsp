@@ -1,7 +1,7 @@
 <%@page import="web2.dto.MemberDTO"%>
-<%@page import="java.sql.Connection"%>
 <%@page import="web2.dao.MemberDAO"%>
 <%@page import="web2.dao.JdbcUtil"%>
+<%@page import="java.sql.Connection"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <%
@@ -9,7 +9,7 @@
 	request.setCharacterEncoding("utf-8");
 
 
-	//폼에서 입력값 가져오기 ( request.getParameter)
+	//폼에서 입력값 가져오기
 	String name = request.getParameter("name");
 	String addr = request.getParameter("addr");
 	String email = request.getParameter("email");
@@ -38,7 +38,16 @@
 	JdbcUtil.close(con);
 	
 	response.sendRedirect(path);
-	
-
-
 %>
+
+
+
+
+
+
+
+
+
+
+
+
